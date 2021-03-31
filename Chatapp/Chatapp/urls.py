@@ -1,5 +1,8 @@
-"""Chatapp URL Configuration
-
+from django.conrib import admin
+from django.urls import path, include 
+from users import views as user_views 
+"""
+Chatapp URL Configuration
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
@@ -18,4 +21,7 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('register/', usr_view.register, name='register'),
+    path('', include('blog.urls')),
+
 ]
