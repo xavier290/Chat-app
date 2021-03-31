@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Frontend_server',
     'rest_framework',
     'frontend',
+    'chat'
 ]
 
 MIDDLEWARE = [
