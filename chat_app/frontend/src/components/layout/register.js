@@ -47,7 +47,7 @@ class Register extends Component {
               </em>
             </p>
 
-            <button type="submit" form="register">
+            <button className="btn" type="submit" form="register">
               Register
             </button>
           </form>
