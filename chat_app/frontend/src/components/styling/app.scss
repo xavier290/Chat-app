@@ -1,5 +1,7 @@
-$base-color: #ffffff;
-$second-color: #ffc83a;
+$primary-color: #ffffff;
+$pallete-color-one: #ffc83a;
+$pallete-color-two: #ff383888;
+$pallete-color-three: #f8f8f885;
 
 .container {
   width: 100%;
@@ -9,7 +11,69 @@ $second-color: #ffc83a;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, $second-color 20%, $base-color 20%);
+  background: linear-gradient(
+    to right,
+    $pallete-color-one 20%,
+    $primary-color 20%
+  );
+
+  .landing-page {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 100vh;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+
+    .left {
+      background-color: $pallete-color-one;
+      display: flex;
+
+      .ellipse {
+        background-color: transparent;
+        border: 60px solid #ffbc0f;
+        border-radius: 100%;
+        width: 100%;
+        height: 60%;
+      }
+    }
+    .right {
+      background-color: $primary-color;
+    }
+    main {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+
+      .main-content {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        background-color: $pallete-color-three;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+
+        .title {
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          color: black;
+          font-size: 24px;
+        }
+
+        h2 {
+          font-size: 54px;
+          font-weight: bold;
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
 
   .register-section {
     width: 40%;
@@ -79,18 +143,18 @@ $second-color: #ffc83a;
       font-size: 10px;
       margin-top: 2px;
     }
-
-    button {
-      width: 90px;
-      height: 30px;
-      margin-top: 5px;
-      background: #ff3838;
-      color: $base-color;
-      border-radius: 20px;
-      outline: none;
-      border: none;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
   }
+}
+
+button {
+  width: 90px;
+  height: 30px;
+  margin-top: 5px;
+  background: #ff3838;
+  color: $primary-color;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: transform all 0.3s;
 }

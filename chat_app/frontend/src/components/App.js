@@ -11,6 +11,7 @@ import {
 
 // components
 import ChatApp from "./app/chatApp";
+import LandingPage from "./layout/langing-page";
 import Register from "./layout/register";
 import Login from "./layout/login";
 
@@ -26,6 +27,8 @@ class App extends Component {
             <div className="container">
               <Switch>
                 <Route exact path="/admin" component={ChatApp} />
+                <Route exact path="/" component={LandingPage} />
+
                 <Route exact path="/register" component={Register} />
                 <Route exact path="/login" component={Login} />
               </Switch>
