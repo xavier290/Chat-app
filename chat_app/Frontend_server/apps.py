@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class ChatConfig(AppConfig):
-    name = 'chat'
+class FrontendServerConfig(AppConfig):
+    name = 'Frontend_server'
