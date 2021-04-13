@@ -2,9 +2,16 @@ from Frontend_server.models import app
 from rest_framework import viewsets, permissions
 from .serializers import AppSerializer
 
+
 class AppViewSet(viewsets.ModelViewSet):
-    queryset = app.objects.all()
     permission_classes = [
-        permissions.AllowAny
+        permissions.IsAuthenticated,
     ]
+
     serializer_class = AppSerializer
+
+    def get_queryset(self):
+        return self.request.user.leads.all()
+
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)

@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
 
-class ChatConfig(AppConfig):
-    name = 'chat'
+class FrontendServerConfig(AppConfig):
+    default_auto_field = 'django.db.models.AutoField'
+    name = 'Frontend_server'

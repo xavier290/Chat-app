@@ -3,4 +3,7 @@ import leads from "./leads";
 
 export default combineReducers({
   leads,
+  errors,
+  messages,
+  auth,
 });
