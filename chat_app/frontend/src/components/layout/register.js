@@ -37,19 +37,20 @@ export class Register extends Component {
 
   render() {
     if (this.props.isAuthenticated) {
-      return <Redirect to="/chat/" />;
+      return <Redirect to="/chat" />;
     }
     const { username, email, password, password2 } = this.state;
     return (
       <section className="register-section">
         <form onSubmit={this.onSubmit} id="register">
           <h1>Register</h1>
+
           <label>Name</label>
           <input
             type="text"
-            name="name"
-            id="name_input"
+            name="username"
             onChange={this.onChange}
+            required="True"
             value={username}
           />
 
@@ -57,8 +58,8 @@ export class Register extends Component {
           <input
             type="email"
             name="email"
-            id="email_input"
             onChange={this.onChange}
+            required="True"
             value={email}
           />
 
@@ -66,18 +67,20 @@ export class Register extends Component {
           <input
             type="password"
             name="password"
-            id="password_input"
             onChange={this.onChange}
             value={password}
+            autoComplete="tel"
+            required="True"
           />
 
           <label>Confirm password</label>
           <input
             type="password"
-            name="confirm_password"
-            id="confirm_password_input"
+            name="password2"
             onChange={this.onChange}
             value={password2}
+            autoComplete="tel"
+            required="True"
           />
 
           <p className="small-text">
