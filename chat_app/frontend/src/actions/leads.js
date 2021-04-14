@@ -2,7 +2,7 @@ import axios from "axios";
 import { createMessage, returnErrors } from "./messages";
 import { tokenConfig } from "./auth";
 
-import { GET_LEADS, DELETE_LEAD, ADD_LEAD } from "./type";
+import { GET_LEADS, DELETE_LEAD, ADD_LEAD } from "./types";
 
 // Get Leads
 export const getLeads = () => (dispatch, getState) => {

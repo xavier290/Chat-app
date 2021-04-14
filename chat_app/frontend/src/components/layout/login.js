@@ -33,37 +33,32 @@ export class Login extends Component {
         <section className="register-section">
           <form>
             <h1>Login</h1>
-            <label htmlFor="email_input">Email</label>
+            <label>Email</label>
             <input
               type="email"
               name="email"
               id="email_input"
-              placeholder="email"
               onChange={this.onChange}
               value={email}
             />
-            <div style={{ height: "10px" }}></div>
 
-            <label htmlFor="password_input">Password</label>
+            <label>Password</label>
             <input
               type="password"
               name="name"
               id="password_input"
-              placeholder="password"
               onChange={this.onChange}
               value={password}
             />
-            <div style={{ height: "10px" }}></div>
 
             <p className="small-text">
               <em>
-                Don't have an account?{" "}
+                Don't have an account?
                 <Link className="link" to="/register">
                   Register
                 </Link>
               </em>
             </p>
-            <div style={{ height: "30px" }}></div>
 
             <button className="login-btn" type="submit">
               Login

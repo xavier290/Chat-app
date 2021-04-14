@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -22,7 +22,7 @@ export class Register extends Component {
     e.preventDefault();
     const { username, email, password, password2 } = this.state;
     if (password !== password2) {
-      this.props.createMessage({ passwordNotMatch: "Password do not match" });
+      this.props.createMessage({ passwordNotMatch: "Passwords do not match" });
     } else {
       const newUser = {
         username,
@@ -37,49 +37,45 @@ export class Register extends Component {
 
   render() {
     if (this.props.isAuthenticated) {
-      return <Redirect to="/" />;
+      return <Redirect to="/chat/" />;
     }
     const { username, email, password, password2 } = this.state;
     return (
       <section className="register-section">
         <form onSubmit={this.onSubmit} id="register">
           <h1>Register</h1>
-          <label htmlFor="name_input">Name</label>
+          <label>Name</label>
           <input
             type="text"
             name="name"
             id="name_input"
-            placeholder="name"
             onChange={this.onChange}
             value={username}
           />
 
-          <label htmlFor="email_input">Email</label>
+          <label>Email</label>
           <input
             type="email"
             name="email"
             id="email_input"
-            placeholder="email"
             onChange={this.onChange}
             value={email}
           />
 
-          <label htmlFor="password_input">Password</label>
+          <label>Password</label>
           <input
             type="password"
             name="password"
             id="password_input"
-            placeholder="password"
             onChange={this.onChange}
             value={password}
           />
 
-          <label htmlFor="confirm_password_input">Confirm password</label>
+          <label>Confirm password</label>
           <input
             type="password"
             name="confirm_password"
             id="confirm_password_input"
-            placeholder="password"
             onChange={this.onChange}
             value={password2}
           />
@@ -96,7 +92,7 @@ export class Register extends Component {
             </em>
           </p>
 
-          <button className="btn" type="submit" form="register">
+          <button className="btn" type="submit">
             Register
           </button>
         </form>
@@ -104,6 +100,7 @@ export class Register extends Component {
     );
   }
 }
+
 const mapStateToProps = (state) => ({
   isAuthenticated: state.auth.isAuthenticated,
 });

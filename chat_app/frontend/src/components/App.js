@@ -4,13 +4,7 @@ import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
 import React, { Component, Fragment } from "react";
-import ReactDOM from "react-dom";
-import {
-  HashRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 // components
 import ChatApp from "./app/chatApp";
@@ -24,6 +18,7 @@ import PrivateRoute from "./common/PrivateRoute";
 import { Provider } from "react-redux";
 import store from "../store";
 import { loadUser } from "../actions/auth";
+import history from "../history";
 
 const alertOptions = {
   timeout: 3000,
@@ -39,7 +34,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <AlertProvider template={AlertTemplate} {...alertOptions}>
-          <Router>
+          <Router history={history}>
             <Fragment>
               <Alerts />
               <div className="container">
