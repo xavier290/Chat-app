@@ -18,7 +18,6 @@ import PrivateRoute from "./common/PrivateRoute";
 import { Provider } from "react-redux";
 import store from "../store";
 import { loadUser } from "../actions/auth";
-import history from "../history";
 
 const alertOptions = {
   timeout: 3000,
@@ -34,7 +33,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <AlertProvider template={AlertTemplate} {...alertOptions}>
-          <Router history={history}>
+          <Router>
             <Fragment>
               <Alerts />
               <div className="container">

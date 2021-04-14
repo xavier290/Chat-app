@@ -33,6 +33,7 @@ export class Login extends Component {
         <section className="register-section">
           <form>
             <h1>Login</h1>
+
             <label>Email</label>
             <input
               type="email"
@@ -45,10 +46,12 @@ export class Login extends Component {
             <label>Password</label>
             <input
               type="password"
-              name="name"
+              name="password"
               id="password_input"
               onChange={this.onChange}
               value={password}
+              autoComplete="tel"
+              required="True"
             />
 
             <p className="small-text">
