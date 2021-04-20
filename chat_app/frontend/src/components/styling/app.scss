@@ -3,6 +3,19 @@ $pallete-color-one: #ffc83a;
 $pallete-color-two: #ff383888;
 $pallete-color-three: #f8f8f885;
 
+button {
+  width: 90px;
+  height: 30px;
+  margin-top: 5px;
+  background: #ff3838;
+  color: $primary-color;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: transform all 0.3s;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -13,29 +26,17 @@ $pallete-color-three: #f8f8f885;
   align-items: center;
   background: linear-gradient(
     to right,
-    $pallete-color-one 20%,
-    $primary-color 20%
+    $pallete-color-one 35%,
+    $primary-color 35%
   );
 
   .landing-page {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 35% 65%;
     height: 100vh;
     width: 100%;
     font-family: "Roboto", sans-serif;
 
-    .left {
-      background-color: $pallete-color-one;
-      display: flex;
-
-      .ellipse {
-        background-color: transparent;
-        border: 60px solid #ffbc0f;
-        border-radius: 100%;
-        width: 100%;
-        height: 60%;
-      }
-    }
     .right {
       background-color: $primary-color;
     }
@@ -63,13 +64,17 @@ $pallete-color-three: #f8f8f885;
           top: 5%;
           right: 5%;
           color: black;
-          font-size: 24px;
+          font-size: 20px;
         }
 
         h2 {
-          font-size: 54px;
+          font-size: 28px;
           font-weight: bold;
           margin-bottom: 4px;
+        }
+
+        p {
+          font-size: 13px;
         }
       }
     }
@@ -77,9 +82,10 @@ $pallete-color-three: #f8f8f885;
 
   .register-section {
     width: 40%;
-    min-width: 280px;
-    max-width: 280px;
-    min-height: 340px;
+    min-width: 260px;
+    max-width: 260px;
+    min-height: 350px;
+    max-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,20 +93,21 @@ $pallete-color-three: #f8f8f885;
     text-align: center;
     background: #f4f4f4;
     box-shadow: 0 0 10px;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   .login-section {
     min-width: 250px;
     max-width: 250px;
     min-height: 300px;
+    max-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #f4f4f4;
     box-shadow: 0 0 10px;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   form {
@@ -113,36 +120,24 @@ $pallete-color-three: #f8f8f885;
     font-family: "Roboto", sans-serif;
 
     label {
-      width: 80%;
+      width: 90%;
       text-align: left;
       margin-bottom: 2px;
     }
 
     input {
-      width: 80%;
-      height: 25px;
+      width: 90%;
+      height: 30px;
       border: none;
-      background: #c4c4c4;
+      background: #c9c9c9;
       border-radius: 5px;
       padding-left: 5px;
+      outline: none;
     }
 
-    p {
-      font-size: 10px;
-      margin-top: 2px;
+    .small-text {
+      font-size: 12px;
+      margin-top: 5px;
     }
   }
-}
-
-button {
-  width: 90px;
-  height: 30px;
-  margin-top: 5px;
-  background: #ff3838;
-  color: $primary-color;
-  border-radius: 20px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: transform all 0.3s;
 }

@@ -1,4 +1,5 @@
 import "./styling/app.scss";
+import "./styling/responsive.scss";
 
 import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
@@ -20,7 +21,7 @@ import store from "../store";
 import { loadUser } from "../actions/auth";
 
 const alertOptions = {
-  timeout: 3000,
+  timeout: 6000,
   position: "top center",
 };
 
