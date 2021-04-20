@@ -1,0 +1,57 @@
+$primary-color: #ffffff;
+$pallete-color-one: #ffc83a;
+$pallete-color-two: #ff383888;
+$pallete-color-three: #f8f8f885;
+
+@media all and (min-width: 350px) and (max-width: 767px) {
+  .container {
+    background: linear-gradient(
+      to right,
+      $pallete-color-one 30%,
+      $primary-color 30%
+    );
+
+    .register-section {
+      min-width: 300px;
+      max-width: 300px;
+    }
+    .login-section {
+      min-width: 280px;
+      max-width: 280px;
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    .landing-page {
+      grid-template-columns: 25% 75%;
+
+      main {
+        .main-content {
+          .title {
+            font-size: 26px;
+          }
+
+          h2 {
+            font-size: 44px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .container {
+    background: linear-gradient(
+      to right,
+      $pallete-color-one 20%,
+      $primary-color 20%
+    );
+  }
+}

@@ -45,7 +45,7 @@ export class Register extends Component {
         <form onSubmit={this.onSubmit} id="register">
           <h1>Register</h1>
 
-          <label>Name</label>
+          <label>Username</label>
           <input
             type="text"
             name="username"
@@ -83,10 +83,12 @@ export class Register extends Component {
             required="True"
           />
 
+          <button className="btn" type="submit">
+            Register
+          </button>
+
           <p className="small-text">
-            <em>When registering you agree to our terms of service</em>
-          </p>
-          <p className="small-text">
+            <em>When registering you agree to our terms of service </em>
             <em>
               Already have an account?{" "}
               <Link to="/login" className="link">
@@ -94,10 +96,6 @@ export class Register extends Component {
               </Link>
             </em>
           </p>
-
-          <button className="btn" type="submit">
-            Register
-          </button>
         </form>
       </section>
     );

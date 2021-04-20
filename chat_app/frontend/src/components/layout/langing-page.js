@@ -18,9 +18,11 @@ class LandingPage extends Component {
             <p>
               get feedback and interact with other programmers to grow together.
             </p>
-            <Link to="/Register">
-              <button className="btn">Register</button>
-            </Link>
+            <div>
+              <Link to="/Register">
+                <button className="btn">Register</button>
+              </Link>
+            </div>
           </div>
         </main>
       </div>
