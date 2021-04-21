@@ -25,11 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-  
-    'Frontend_server',
-    'rest_framework',
-    'frontend',
-    'chat',
+
     'knox',
     'accounts',
 ]

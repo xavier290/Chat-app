@@ -31,15 +31,10 @@ button {
   );
 
   .landing-page {
-    display: grid;
-    grid-template-columns: 35% 65%;
     height: 100vh;
     width: 100%;
     font-family: "Roboto", sans-serif;
 
-    .right {
-      background-color: $primary-color;
-    }
     main {
       position: absolute;
       width: 100%;
@@ -141,3 +136,5 @@ button {
     }
   }
 }
+
+@import "./responsive.scss";

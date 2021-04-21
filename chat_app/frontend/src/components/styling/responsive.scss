@@ -3,7 +3,7 @@ $pallete-color-one: #ffc83a;
 $pallete-color-two: #ff383888;
 $pallete-color-three: #f8f8f885;
 
-@media all and (min-width: 350px) and (max-width: 767px) {
+@media all and (min-width: 350px) and (max-width: 739px) {
   .container {
     background: linear-gradient(
       to right,
@@ -22,11 +22,15 @@ $pallete-color-three: #f8f8f885;
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 740px) and (max-width: 1023px) {
   .container {
-    .landing-page {
-      grid-template-columns: 25% 75%;
+    background: linear-gradient(
+      to right,
+      $pallete-color-one 25%,
+      $primary-color 25%
+    );
 
+    .landing-page {
       main {
         .main-content {
           .title {
@@ -53,5 +57,23 @@ $pallete-color-three: #f8f8f885;
       $pallete-color-one 20%,
       $primary-color 20%
     );
+
+    .landing-page {
+      main {
+        .main-content {
+          .title {
+            font-size: 28px;
+          }
+
+          h2 {
+            font-size: 46px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
   }
 }

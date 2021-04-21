@@ -5,10 +5,6 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="landing-page">
-        <div className="left">
-          <div className="ellipse"></div>
-        </div>
-        <div className="right"></div>
         <main>
           <div className="main-content">
             <h1 className="title">CoderHub</h1>

@@ -1,5 +1,4 @@
 import "./styling/app.scss";
-import "./styling/responsive.scss";
 
 import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
@@ -10,7 +9,7 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 // components
 import ChatApp from "./app/chatApp";
 import Chat from "./layout/chat";
-import LandingPage from "./layout/langing-page";
+import LandingPage from "./layout/landing-page";
 import Register from "./layout/register";
 import Login from "./layout/login";
 import Alerts from "./layout/Alerts";

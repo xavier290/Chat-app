@@ -4,10 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
 djangorestframework = "*"
 django-rest-knox = "*"
 channels = "*"
+channels-redis = "*"
+Django = "*"
 
 [dev-packages]
 
