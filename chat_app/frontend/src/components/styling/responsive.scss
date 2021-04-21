@@ -14,10 +14,14 @@ $pallete-color-three: #f8f8f885;
     .register-section {
       min-width: 300px;
       max-width: 300px;
+      min-height: 370px;
+      max-height: 370px;
     }
     .login-section {
       min-width: 280px;
       max-width: 280px;
+      min-height: 320px;
+      max-height: 320px;
     }
   }
 }
@@ -47,6 +51,20 @@ $pallete-color-three: #f8f8f885;
         }
       }
     }
+
+    .register-section {
+      min-width: 310px;
+      max-width: 310px;
+      min-height: 370px;
+      max-height: 370px;
+    }
+
+    .login-section {
+      min-width: 290px;
+      max-width: 290px;
+      min-height: 320px;
+      max-height: 320px;
+    }
   }
 }
 
@@ -74,6 +92,20 @@ $pallete-color-three: #f8f8f885;
           }
         }
       }
+    }
+
+    .register-section {
+      min-width: 310px;
+      max-width: 310px;
+      min-height: 370px;
+      max-height: 370px;
+    }
+
+    .login-section {
+      min-width: 290px;
+      max-width: 290px;
+      min-height: 320px;
+      max-height: 320px;
     }
   }
 }
