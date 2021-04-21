@@ -7,7 +7,6 @@ import React, { Component, Fragment } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 // components
-import ChatApp from "./app/chatApp";
 import Chat from "./layout/chat";
 import LandingPage from "./layout/landing-page";
 import Register from "./layout/register";
@@ -38,7 +37,6 @@ class App extends Component {
               <Alerts />
               <div className="container">
                 <Switch>
-                  <Route exact path="/admin" component={ChatApp} />
                   <PrivateRoute exact path="/chat" component={Chat} />
                   <Route exact path="/" component={LandingPage} />
 
