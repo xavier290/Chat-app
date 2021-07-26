@@ -30,8 +30,8 @@ export class Login extends Component {
 
     return (
       <Fragment>
-        <section className="login-section">
-          <form>
+        <section className="form-section">
+          <form id="login">
             <h1>Login</h1>
 
             <label>Email</label>
@@ -54,10 +54,6 @@ export class Login extends Component {
               required="True"
             />
 
-            <button className="login-btn" type="submit">
-              Login
-            </button>
-
             <p className="small-text">
               <em>Don't have an account? </em>
               <em>
@@ -66,6 +62,10 @@ export class Login extends Component {
                 </Link>
               </em>
             </p>
+
+            <button className="btn" type="submit">
+              Login
+            </button>
           </form>
         </section>
       </Fragment>

@@ -1,0 +1,47 @@
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, $colorPallete1 35%, $colorPallete2 35%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  main {
+    width: 90%;
+    min-height: 80vh;
+    background: #e7e7e78f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    font-family: $text-font-stack;
+    position: relative;
+
+    .title {
+      position: absolute;
+      top: 2%;
+      right: 2%;
+    }
+
+    p {
+      font-family: "Lato", sans-serif;
+    }
+
+    .btn {
+      margin-top: 14px;
+      width: 100px;
+      height: 35px;
+      font-size: 18px;
+      color: #ffffff;
+      border-radius: 14px;
+      outline: #ff383888;
+      background: $colorPallete3;
+      transition: all 0.4s;
+      cursor: pointer;
+    }
+    .btn:hover {
+      transform: scale(1.07);
+    }
+  }
+}

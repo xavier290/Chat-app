@@ -1,4 +1,4 @@
-import "./styling/app.scss";
+import "./styling/main.scss";
 
 import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";

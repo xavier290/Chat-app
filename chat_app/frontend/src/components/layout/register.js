@@ -41,7 +41,7 @@ export class Register extends Component {
     }
     const { username, email, password, password2 } = this.state;
     return (
-      <section className="register-section">
+      <section className="form-section">
         <form onSubmit={this.onSubmit} id="register">
           <h1>Register</h1>
 
@@ -83,10 +83,6 @@ export class Register extends Component {
             required="True"
           />
 
-          <button className="btn" type="submit">
-            Register
-          </button>
-
           <p className="small-text">
             <em>When registering you agree to our terms of service </em>
             <em>
@@ -96,6 +92,10 @@ export class Register extends Component {
               </Link>
             </em>
           </p>
+
+          <button className="btn" type="submit">
+            Register
+          </button>
         </form>
       </section>
     );

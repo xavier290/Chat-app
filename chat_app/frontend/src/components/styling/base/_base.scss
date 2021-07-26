@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+//basic style for links
+
+li {
+  display: list-item;
+  list-style: none;
+}
+
+li::marker {
+  color: black;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none !important;
+}

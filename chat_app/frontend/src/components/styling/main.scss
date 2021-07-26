@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
+
+// configuration and helpers
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
+
+// Base stuff
+@import "base/base";
+@import "base/helpers";
+
+// Layout related sections
+@import "layout/header";
+@import "layout/footer";
+@import "layout/form";
+
+// pages
+@import "pages/index";
+
+// responsive
+@import "responsive/responsive";
