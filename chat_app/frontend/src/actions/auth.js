@@ -34,60 +34,64 @@ export const loadUser = () => (dispatch, getState) => {
 };
 
 // LOGIN USER
-export const login = (username, password) => (dispatch) => {
-  // Headers
-  const config = {
-    headers: {
-      "Content-Type": "application/json",
-    },
+export const login =
+  ({ username, password }) =>
+  (dispatch) => {
+    // Headers
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
+    // Request Body
+    const body = JSON.stringify({ username, password });
+
+    axios
+      .post("/api/auth/login", body, config)
+      .then((res) => {
+        dispatch({
+          type: LOGIN_SUCCESS,
+          payload: res.data,
+        });
+      })
+      .catch((err) => {
+        dispatch(returnErrors(err.response.data, err.response.status));
+        dispatch({
+          type: LOGIN_FAIL,
+        });
+      });
   };
-
-  // Request Body
-  const body = JSON.stringify({ username, password });
-
-  axios
-    .post("/api/auth/login", body, config)
-    .then((res) => {
-      dispatch({
-        type: LOGIN_SUCCESS,
-        payload: res.data,
-      });
-    })
-    .catch((err) => {
-      dispatch(returnErrors(err.response.data, err.response.status));
-      dispatch({
-        type: LOGIN_FAIL,
-      });
-    });
-};
 
 // REGISTER USER
-export const register = ({ username, password, email }) => (dispatch) => {
-  // Headers
-  const config = {
-    headers: {
-      "Content-Type": "application/json",
-    },
+export const register =
+  ({ username, password, email }) =>
+  (dispatch) => {
+    // Headers
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
+    // Request Body
+    const body = JSON.stringify({ username, email, password });
+
+    axios
+      .post("/api/auth/register", body, config)
+      .then((res) => {
+        dispatch({
+          type: REGISTER_SUCCESS,
+          payload: res.data,
+        });
+      })
+      .catch((err) => {
+        dispatch(returnErrors(err.response.data, err.response.status));
+        dispatch({
+          type: REGISTER_FAIL,
+        });
+      });
   };
-
-  // Request Body
-  const body = JSON.stringify({ username, email, password });
-
-  axios
-    .post("/api/auth/register", body, config)
-    .then((res) => {
-      dispatch({
-        type: REGISTER_SUCCESS,
-        payload: res.data,
-      });
-    })
-    .catch((err) => {
-      dispatch(returnErrors(err.response.data, err.response.status));
-      dispatch({
-        type: REGISTER_FAIL,
-      });
-    });
-};
 
 // LOGOUT USER
 export const logout = () => (dispatch, getState) => {
