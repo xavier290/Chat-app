@@ -3,17 +3,17 @@ import "./styling/main.scss";
 import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, Suspense } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 // components
+import Spinner from "react-bootstrap/Spinner";
 import Chat from "./layout/chat";
 import LandingPage from "./layout/landing-page";
-import Register from "./layout/register";
-import Login from "./layout/login";
 import Alerts from "./layout/Alerts";
 import PrivateRoute from "./common/PrivateRoute";
 
+import routes from "./routes";
 import { Provider } from "react-redux";
 import store from "../store";
 import { loadUser } from "../actions/auth";
@@ -36,13 +36,28 @@ class App extends Component {
             <Fragment>
               <Alerts />
               <div className="container">
-                <Switch>
-                  <PrivateRoute exact path="/chat" component={Chat} />
-                  <Route exact path="/" component={LandingPage} />
+                <Suspense
+                  fallback={
+                    <div className="loader">
+                      <Spinner animation="border" role="status">
+                        <span className="sr-only">Loading...</span>
+                      </Spinner>
+                    </div>
+                  }
+                >
+                  <Switch>
+                    {routes.map((route) => (
+                      <Route
+                        path={route.path}
+                        component={route.component}
+                        key={route.path}
+                      />
+                    ))}
 
-                  <Route exact path="/register" component={Register} />
-                  <Route exact path="/login" component={Login} />
-                </Switch>
+                    <PrivateRoute exact path="/chat" component={Chat} />
+                    <Route exact path="/" component={LandingPage} />
+                  </Switch>
+                </Suspense>
               </div>
             </Fragment>
           </Router>

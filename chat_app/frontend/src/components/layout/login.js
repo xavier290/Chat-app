@@ -30,7 +30,7 @@ export class Login extends Component {
 
     return (
       <section className="form-section">
-        <form id="login">
+        <form id="login" onSubmit={this.onSubmit}>
           <h1>Login</h1>
 
           <label>Username</label>

@@ -63,7 +63,7 @@ export class Chat extends Component {
     };
     this.client.onmessage = (message) => {
       const dataFromServer = JSON.parse(message.data);
-      console.log("got reply! ", dataFromServer.type);
+      console.log("got reply! ");
       if (dataFromServer) {
         this.setState((state) => ({
           messages: [

@@ -27,3 +27,12 @@ Content-Type: application/json
     "username": "Luis",
     "password": "12345678"
 }
+###
+# Send Request
+POST http://127.0.0.1:8000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "lola",
+    "password": "lol"
+}
