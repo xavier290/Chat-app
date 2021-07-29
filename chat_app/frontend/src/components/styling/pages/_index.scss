@@ -33,15 +33,19 @@
       width: 100px;
       height: 35px;
       font-size: 18px;
-      color: #ffffff;
+      color: $colorPallete3;
       border-radius: 14px;
-      outline: #ff383888;
-      background: $colorPallete3;
+      background: transparent;
+      border: solid 2px $colorPallete3;
       transition: all 0.4s;
       cursor: pointer;
     }
     .btn:hover {
       transform: scale(1.07);
     }
+  }
+
+  img {
+    display: none;
   }
 }

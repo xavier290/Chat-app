@@ -11,10 +11,12 @@
 
   #login {
     height: 45vh;
+    max-width: 300px !important;
   }
 
   form {
     width: 90%;
+    max-width: 370px;
     height: 50vh;
     display: flex;
     flex-direction: column;

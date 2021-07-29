@@ -1,0 +1,52 @@
+// landing page
+.landing-page {
+  @include media(">=tablet") {
+    background: linear-gradient(
+      to right,
+      $colorPallete2 50%,
+      $colorPallete1 50%
+    );
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 40px solid #fff;
+    place-items: center;
+
+    main {
+      background: transparent;
+      width: 100%;
+      height: 80vh;
+
+      .title {
+        left: 2%;
+        top: 2%;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .btn {
+        width: 150px;
+        height: 44px;
+        font-size: 22px;
+      }
+    }
+
+    img {
+      display: block;
+      width: 88%;
+    }
+  }
+}
+
+.landing-page {
+  @include media(">=desktop") {
+    main {
+      h2 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+// register page
