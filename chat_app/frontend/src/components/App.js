@@ -8,9 +8,14 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 // components
 import Spinner from "react-bootstrap/Spinner";
+
+// pages
+import Home from "./layout/home";
 import Chat from "./layout/chat";
 import LandingPage from "./layout/landing-page";
+
 import Alerts from "./layout/Alerts";
+
 import PrivateRoute from "./common/PrivateRoute";
 
 import routes from "./routes";
@@ -55,6 +60,7 @@ class App extends Component {
                     ))}
 
                     <PrivateRoute exact path="/chat" component={Chat} />
+                    <Route exact path="/home" component={Home} />
                     <Route exact path="/" component={LandingPage} />
                   </Switch>
                 </Suspense>

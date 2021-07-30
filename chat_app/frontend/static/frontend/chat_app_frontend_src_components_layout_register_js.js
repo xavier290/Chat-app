@@ -8,80 +8,6 @@
  */
 (self["webpackChunkchat_app"] = self["webpackChunkchat_app"] || []).push([["chat_app_frontend_src_components_layout_register_js"],{
 
-/***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
-  \**********************************************************************/
-/***/ ((module) => {
-
-eval("function _interopRequireDefault(obj) {\n  return obj && obj.__esModule ? obj : {\n    \"default\": obj\n  };\n}\n\nmodule.exports = _interopRequireDefault;\nmodule.exports.default = module.exports, module.exports.__esModule = true;\n\n//# sourceURL=webpack://chat-app/./node_modules/@babel/runtime/helpers/interopRequireDefault.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/interopRequireWildcard.js ***!
-  \***********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ \"./node_modules/@babel/runtime/helpers/typeof.js\").default;\n\nfunction _getRequireWildcardCache() {\n  if (typeof WeakMap !== \"function\") return null;\n  var cache = new WeakMap();\n\n  _getRequireWildcardCache = function _getRequireWildcardCache() {\n    return cache;\n  };\n\n  return cache;\n}\n\nfunction _interopRequireWildcard(obj) {\n  if (obj && obj.__esModule) {\n    return obj;\n  }\n\n  if (obj === null || _typeof(obj) !== \"object\" && typeof obj !== \"function\") {\n    return {\n      \"default\": obj\n    };\n  }\n\n  var cache = _getRequireWildcardCache();\n\n  if (cache && cache.has(obj)) {\n    return cache.get(obj);\n  }\n\n  var newObj = {};\n  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;\n\n  for (var key in obj) {\n    if (Object.prototype.hasOwnProperty.call(obj, key)) {\n      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;\n\n      if (desc && (desc.get || desc.set)) {\n        Object.defineProperty(newObj, key, desc);\n      } else {\n        newObj[key] = obj[key];\n      }\n    }\n  }\n\n  newObj[\"default\"] = obj;\n\n  if (cache) {\n    cache.set(obj, newObj);\n  }\n\n  return newObj;\n}\n\nmodule.exports = _interopRequireWildcard;\nmodule.exports.default = module.exports, module.exports.__esModule = true;\n\n//# sourceURL=webpack://chat-app/./node_modules/@babel/runtime/helpers/interopRequireWildcard.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/typeof.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
-  \*******************************************************/
-/***/ ((module) => {
-
-eval("function _typeof(obj) {\n  \"@babel/helpers - typeof\";\n\n  if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") {\n    module.exports = _typeof = function _typeof(obj) {\n      return typeof obj;\n    };\n\n    module.exports.default = module.exports, module.exports.__esModule = true;\n  } else {\n    module.exports = _typeof = function _typeof(obj) {\n      return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj;\n    };\n\n    module.exports.default = module.exports, module.exports.__esModule = true;\n  }\n\n  return _typeof(obj);\n}\n\nmodule.exports = _typeof;\nmodule.exports.default = module.exports, module.exports.__esModule = true;\n\n//# sourceURL=webpack://chat-app/./node_modules/@babel/runtime/helpers/typeof.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/utils/index.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/utils/index.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"capitalize\": () => (/* reexport safe */ _capitalize__WEBPACK_IMPORTED_MODULE_0__.default),\n/* harmony export */   \"createChainedFunction\": () => (/* reexport safe */ _createChainedFunction__WEBPACK_IMPORTED_MODULE_1__.default),\n/* harmony export */   \"createSvgIcon\": () => (/* reexport safe */ _createSvgIcon__WEBPACK_IMPORTED_MODULE_2__.default),\n/* harmony export */   \"debounce\": () => (/* reexport safe */ _debounce__WEBPACK_IMPORTED_MODULE_3__.default),\n/* harmony export */   \"deprecatedPropType\": () => (/* reexport safe */ _deprecatedPropType__WEBPACK_IMPORTED_MODULE_4__.default),\n/* harmony export */   \"isMuiElement\": () => (/* reexport safe */ _isMuiElement__WEBPACK_IMPORTED_MODULE_5__.default),\n/* harmony export */   \"ownerDocument\": () => (/* reexport safe */ _ownerDocument__WEBPACK_IMPORTED_MODULE_6__.default),\n/* harmony export */   \"ownerWindow\": () => (/* reexport safe */ _ownerWindow__WEBPACK_IMPORTED_MODULE_7__.default),\n/* harmony export */   \"requirePropFactory\": () => (/* reexport safe */ _requirePropFactory__WEBPACK_IMPORTED_MODULE_8__.default),\n/* harmony export */   \"setRef\": () => (/* reexport safe */ _setRef__WEBPACK_IMPORTED_MODULE_9__.default),\n/* harmony export */   \"unsupportedProp\": () => (/* reexport safe */ _unsupportedProp__WEBPACK_IMPORTED_MODULE_10__.default),\n/* harmony export */   \"useControlled\": () => (/* reexport safe */ _useControlled__WEBPACK_IMPORTED_MODULE_11__.default),\n/* harmony export */   \"useEventCallback\": () => (/* reexport safe */ _useEventCallback__WEBPACK_IMPORTED_MODULE_12__.default),\n/* harmony export */   \"useForkRef\": () => (/* reexport safe */ _useForkRef__WEBPACK_IMPORTED_MODULE_13__.default),\n/* harmony export */   \"unstable_useId\": () => (/* reexport safe */ _unstable_useId__WEBPACK_IMPORTED_MODULE_14__.default),\n/* harmony export */   \"useIsFocusVisible\": () => (/* reexport safe */ _useIsFocusVisible__WEBPACK_IMPORTED_MODULE_15__.default)\n/* harmony export */ });\n/* harmony import */ var _capitalize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./capitalize */ \"./node_modules/@material-ui/core/esm/utils/capitalize.js\");\n/* harmony import */ var _createChainedFunction__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createChainedFunction */ \"./node_modules/@material-ui/core/esm/utils/createChainedFunction.js\");\n/* harmony import */ var _createSvgIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./createSvgIcon */ \"./node_modules/@material-ui/core/esm/utils/createSvgIcon.js\");\n/* harmony import */ var _debounce__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./debounce */ \"./node_modules/@material-ui/core/esm/utils/debounce.js\");\n/* harmony import */ var _deprecatedPropType__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./deprecatedPropType */ \"./node_modules/@material-ui/core/esm/utils/deprecatedPropType.js\");\n/* harmony import */ var _isMuiElement__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./isMuiElement */ \"./node_modules/@material-ui/core/esm/utils/isMuiElement.js\");\n/* harmony import */ var _ownerDocument__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ownerDocument */ \"./node_modules/@material-ui/core/esm/utils/ownerDocument.js\");\n/* harmony import */ var _ownerWindow__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ownerWindow */ \"./node_modules/@material-ui/core/esm/utils/ownerWindow.js\");\n/* harmony import */ var _requirePropFactory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./requirePropFactory */ \"./node_modules/@material-ui/core/esm/utils/requirePropFactory.js\");\n/* harmony import */ var _setRef__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./setRef */ \"./node_modules/@material-ui/core/esm/utils/setRef.js\");\n/* harmony import */ var _unsupportedProp__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./unsupportedProp */ \"./node_modules/@material-ui/core/esm/utils/unsupportedProp.js\");\n/* harmony import */ var _useControlled__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./useControlled */ \"./node_modules/@material-ui/core/esm/utils/useControlled.js\");\n/* harmony import */ var _useEventCallback__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./useEventCallback */ \"./node_modules/@material-ui/core/esm/utils/useEventCallback.js\");\n/* harmony import */ var _useForkRef__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./useForkRef */ \"./node_modules/@material-ui/core/esm/utils/useForkRef.js\");\n/* harmony import */ var _unstable_useId__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./unstable_useId */ \"./node_modules/@material-ui/core/esm/utils/unstable_useId.js\");\n/* harmony import */ var _useIsFocusVisible__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./useIsFocusVisible */ \"./node_modules/@material-ui/core/esm/utils/useIsFocusVisible.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n // eslint-disable-next-line camelcase\n\n\n\n\n//# sourceURL=webpack://chat-app/./node_modules/@material-ui/core/esm/utils/index.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/utils/requirePropFactory.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/utils/requirePropFactory.js ***!
-  \************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ requirePropFactory)\n/* harmony export */ });\nfunction requirePropFactory(componentNameInError) {\n  if (false) {}\n\n  var requireProp = function requireProp(requiredProp) {\n    return function (props, propName, componentName, location, propFullName) {\n      var propFullNameSafe = propFullName || propName;\n\n      if (typeof props[propName] !== 'undefined' && !props[requiredProp]) {\n        return new Error(\"The prop `\".concat(propFullNameSafe, \"` of \") + \"`\".concat(componentNameInError, \"` must be used on `\").concat(requiredProp, \"`.\"));\n      }\n\n      return null;\n    };\n  };\n\n  return requireProp;\n}\n\n//# sourceURL=webpack://chat-app/./node_modules/@material-ui/core/esm/utils/requirePropFactory.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/utils/unstable_useId.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/utils/unstable_useId.js ***!
-  \********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ useId)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n/**\n * Private module reserved for @material-ui/x packages.\n */\n\nfunction useId(idOverride) {\n  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState(idOverride),\n      defaultId = _React$useState[0],\n      setDefaultId = _React$useState[1];\n\n  var id = idOverride || defaultId;\n  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {\n    if (defaultId == null) {\n      // Fallback to this default id when possible.\n      // Use the random value for client-side rendering only.\n      // We can't use it server-side.\n      setDefaultId(\"mui-\".concat(Math.round(Math.random() * 1e5)));\n    }\n  }, [defaultId]);\n  return id;\n}\n\n//# sourceURL=webpack://chat-app/./node_modules/@material-ui/core/esm/utils/unstable_useId.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/utils/unsupportedProp.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/utils/unsupportedProp.js ***!
-  \*********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ unsupportedProp)\n/* harmony export */ });\nfunction unsupportedProp(props, propName, componentName, location, propFullName) {\n  if (false) {}\n\n  var propFullNameSafe = propFullName || propName;\n\n  if (typeof props[propName] !== 'undefined') {\n    return new Error(\"The prop `\".concat(propFullNameSafe, \"` is not supported. Please remove it.\"));\n  }\n\n  return null;\n}\n\n//# sourceURL=webpack://chat-app/./node_modules/@material-ui/core/esm/utils/unsupportedProp.js?");
-
-/***/ }),
-
 /***/ "./node_modules/@material-ui/icons/ArrowRight.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@material-ui/icons/ArrowRight.js ***!
@@ -90,17 +16,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ \"./node_modules/@babel/runtime/helpers/interopRequireDefault.js\");\n\nvar _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ \"./node_modules/@babel/runtime/helpers/interopRequireWildcard.js\");\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nexports.default = void 0;\n\nvar React = _interopRequireWildcard(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nvar _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ \"./node_modules/@material-ui/icons/utils/createSvgIcon.js\"));\n\nvar _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement(\"path\", {\n  d: \"M10 17l5-5-5-5v10z\"\n}), 'ArrowRight');\n\nexports.default = _default;\n\n//# sourceURL=webpack://chat-app/./node_modules/@material-ui/icons/ArrowRight.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/utils/createSvgIcon.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@material-ui/icons/utils/createSvgIcon.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nObject.defineProperty(exports, \"default\", ({\n  enumerable: true,\n  get: function get() {\n    return _utils.createSvgIcon;\n  }\n}));\n\nvar _utils = __webpack_require__(/*! @material-ui/core/utils */ \"./node_modules/@material-ui/core/esm/utils/index.js\");\n\n//# sourceURL=webpack://chat-app/./node_modules/@material-ui/icons/utils/createSvgIcon.js?");
 
 /***/ }),
 

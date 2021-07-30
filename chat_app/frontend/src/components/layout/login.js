@@ -34,7 +34,10 @@ export class Login extends Component {
       <section className="form-section">
         <div className="register-part">
           <h2>Hello There!</h2>
-          <p>Create your account in the Hub and stay connected forever.</p>
+          <p>
+            If you don't have an account, create one and stay connected forever
+            through the hub, with just a few clicks.
+          </p>
           <button className="btn">
             <Link to="/register">
               Sign Up
