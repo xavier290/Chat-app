@@ -21,9 +21,9 @@ class LandingPage extends Component {
               on one communication through the hub.
             </p>
             <div>
-              <Link to="/Register">
-                <button className="btn">Register</button>
-              </Link>
+              <button className="btn">
+                <Link to="/register">Register</Link>
+              </button>
             </div>
           </div>
         </main>

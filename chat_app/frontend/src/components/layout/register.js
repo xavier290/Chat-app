@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 import { register } from "../../actions/auth";
 import { createMessage } from "../../actions/messages";
 
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+
 export class Register extends Component {
   state = {
     username: "",
@@ -42,6 +44,20 @@ export class Register extends Component {
     const { username, email, password, password2 } = this.state;
     return (
       <section className="form-section">
+        <div className="login-part">
+          <h2>Welcome Back!</h2>
+          <p>
+            If You already have an account just sign in with ur info to connect
+            in the Hub.
+          </p>
+          <button className="btn">
+            <Link to="/login">
+              Sign In
+              <ArrowRightIcon />
+            </Link>
+          </button>
+        </div>
+
         <form onSubmit={this.onSubmit} id="register">
           <h1>Register</h1>
 
@@ -93,7 +109,7 @@ export class Register extends Component {
             </em>
           </p>
 
-          <button className="btn" type="submit">
+          <button className="btn registerBtn" type="submit">
             Register
           </button>
         </form>

@@ -24,24 +24,34 @@
       right: 2%;
     }
 
+    h2 {
+      margin: 0% !important;
+    }
+
     p {
+      margin: 0% !important;
       font-family: "Lato", sans-serif;
     }
 
+    a {
+      display: block;
+      color: $colorPallete3;
+    }
+
     .btn {
-      margin-top: 14px;
       width: 100px;
       height: 35px;
       font-size: 18px;
-      color: $colorPallete3;
-      border-radius: 14px;
+      border-radius: 4px;
       background: transparent;
       border: solid 2px $colorPallete3;
       transition: all 0.4s;
       cursor: pointer;
+      margin-top: 10px;
+      padding: 0% !important;
     }
     .btn:hover {
-      transform: scale(1.07);
+      transform: scale(1.04);
     }
   }
 

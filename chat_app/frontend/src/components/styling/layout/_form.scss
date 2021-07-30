@@ -16,13 +16,12 @@
 
   form {
     width: 90%;
-    max-width: 370px;
+    max-width: 340px;
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto", sans-serif;
     background: #eeeeee;
     box-shadow: 0 0 8px black;
     border-radius: 4px;
@@ -53,18 +52,99 @@
       color: blue;
     }
 
-    .btn {
-      width: 80px;
-      height: 28px;
-      background: $colorPallete3;
-      border-radius: 10px;
-      color: #fff;
-      transition: all 0.4s;
-      cursor: pointer;
+    .loginBtn {
+      margin-top: 8px !important;
     }
 
-    .btn:hover {
-      transform: scale(1.04);
+    .registerBtn {
+      margin-top: 8px !important;
+    }
+  }
+
+  .btn {
+    width: 80px;
+    height: 28px;
+    background: transparent;
+    border-radius: 4px;
+    border: 2px solid $colorPallete3;
+    color: $colorPallete3;
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0% !important;
+
+    a {
+      color: $colorPallete3;
+    }
+  }
+
+  .btn:hover {
+    transform: scale(1.04);
+  }
+
+  .login-part {
+    width: 100%;
+    height: 100vh;
+    padding: 2%;
+    display: none;
+    background: $colorPallete1;
+
+    h2 {
+      font-weight: bolder;
+    }
+
+    p {
+      font-weight: bold;
+    }
+
+    a {
+      display: block;
+      font-size: 26px;
+      font-weight: bolder;
+      color: $bluePallete;
+    }
+
+    .btn {
+      color: $bluePallete;
+      border: none;
+      border-radius: 0% !important;
+      width: 120px !important;
+      height: 40px !important;
+      text-align: center;
+      box-shadow: -1px 2px 2px $bluePallete;
+    }
+  }
+
+  .register-part {
+    width: 100%;
+    height: 100vh;
+    padding: 2%;
+    display: none;
+    background: $colorPallete1;
+
+    h2 {
+      font-weight: bolder;
+    }
+
+    p {
+      font-weight: bold;
+    }
+
+    a {
+      display: block;
+      font-size: 26px;
+      font-weight: bolder;
+      color: $bluePallete;
+    }
+
+    .btn {
+      color: $bluePallete;
+      border: none;
+      border-radius: 0% !important;
+      width: 130px !important;
+      height: 40px !important;
+      text-align: center;
+      box-shadow: -1px 2px 2px $bluePallete;
     }
   }
 }

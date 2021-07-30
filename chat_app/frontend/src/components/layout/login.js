@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { login } from "../../actions/auth";
 
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+
 export class Login extends Component {
   state = {
     username: "",
@@ -30,6 +32,17 @@ export class Login extends Component {
 
     return (
       <section className="form-section">
+        <div className="register-part">
+          <h2>Hello There!</h2>
+          <p>Create your account in the Hub and stay connected forever.</p>
+          <button className="btn">
+            <Link to="/register">
+              Sign Up
+              <ArrowRightIcon />
+            </Link>
+          </button>
+        </div>
+
         <form id="login" onSubmit={this.onSubmit}>
           <h1>Login</h1>
 
@@ -61,7 +74,7 @@ export class Login extends Component {
             </em>
           </p>
 
-          <button className="btn" type="submit">
+          <button className="btn loginBtn" type="submit">
             Login
           </button>
         </form>

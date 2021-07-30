@@ -35,12 +35,12 @@ class App extends Component {
           <Router>
             <Fragment>
               <Alerts />
-              <div className="container">
+              <div className="container-app">
                 <Suspense
                   fallback={
                     <div className="loader">
                       <Spinner animation="border" role="status">
-                        <span className="sr-only">Loading...</span>
+                        <span className="sr-only"></span>
                       </Spinner>
                     </div>
                   }
