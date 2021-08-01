@@ -1,7 +1,7 @@
 import React, { Component, Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { SideBarData } from "./menuData";
+import { SideBarData, MenuData } from "./menuData";
 
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
@@ -19,9 +19,13 @@ function Menu() {
         </div>
         <nav>
           <ul>
-            <li>Messages</li>
-            <li>Online</li>
-            <li>Groups</li>
+            {MenuData.map((item, index) => {
+              return (
+                <li key={index} className={item.className}>
+                  <Link to={item.path}>{item.icon}</Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </header>

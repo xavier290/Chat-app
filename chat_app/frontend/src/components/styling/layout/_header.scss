@@ -1,3 +1,56 @@
+.menu {
+  width: 100%;
+  background: $colorPallete1;
+
+  .menuIcon {
+    .MuiSvgIcon-root {
+      font-size: 2.2em !important;
+      color: $bluePallete;
+      cursor: pointer;
+      transition: all 0.6s;
+      margin-bottom: 10px;
+    }
+
+    .MuiSvgIcon-root:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0% !important;
+      margin: 0% !important;
+
+      li {
+        width: 33.33%;
+        text-align: center;
+
+        a {
+          width: 100%;
+          display: block;
+          transition: all 0.5s;
+        }
+
+        a:hover {
+          background: #b18517cc;
+        }
+
+        .MuiSvgIcon-root {
+          color: $bluePallete;
+          font-size: 2.5em;
+        }
+      }
+
+      li:last-child {
+        margin-right: 0px !important;
+      }
+    }
+  }
+}
+
 .nav-menu {
   width: 0%;
   min-height: 120vh;
@@ -62,6 +115,6 @@
 }
 
 .active {
-  animation: opening 0.4s cubic-bezier(0.21, 0.55, 0.88, 1.08);
+  animation: opening 0.4s cubic-bezier(0.21, 0.55, 0.88, 1.12);
   width: 80%;
 }
