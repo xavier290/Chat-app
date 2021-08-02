@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { register } from "../../actions/auth";
-import { createMessage } from "../../actions/messages";
+import { register } from "../../../actions/auth";
+import { createMessage } from "../../../actions/messages";
 
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
@@ -39,7 +39,7 @@ export class Register extends Component {
 
   render() {
     if (this.props.isAuthenticated) {
-      return <Redirect to="/chat" />;
+      return <Redirect to="/home" />;
     }
     const { username, email, password, password2 } = this.state;
     return (

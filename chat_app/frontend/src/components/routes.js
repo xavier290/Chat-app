@@ -1,7 +1,7 @@
 import React from "react";
 
-const Login = React.lazy(() => import("./layout/login"));
-const Register = React.lazy(() => import("./layout/register"));
+const Login = React.lazy(() => import("./layout/accounts/login"));
+const Register = React.lazy(() => import("./layout/accounts/register"));
 
 const routes = [
   {

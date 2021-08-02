@@ -22,6 +22,7 @@ import routes from "./routes";
 import { Provider } from "react-redux";
 import store from "../store";
 import { loadUser } from "../actions/auth";
+import Groups from "./layout/Chat/groups";
 
 const alertOptions = {
   timeout: 6000,
@@ -61,6 +62,7 @@ class App extends Component {
 
                     <PrivateRoute exact path="/chat" component={Chat} />
                     <Route exact path="/home" component={Home} />
+                    <Route exact path="/groups" component={Groups} />
                     <Route exact path="/" component={LandingPage} />
                   </Switch>
                 </Suspense>

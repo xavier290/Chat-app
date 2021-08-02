@@ -1,0 +1,71 @@
+.groups {
+  .toggle-add-group {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: $colorPallete3;
+
+    .MuiSvgIcon-root {
+      font-size: 2.2em !important;
+      cursor: pointer;
+      transition: all 0.6s;
+    }
+
+    .MuiSvgIcon-root:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 40%;
+    left: 10%;
+    height: 20vh;
+    position: fixed;
+    width: 0%;
+    height: 20vh;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 6px #000;
+    text-align: center;
+
+    .add-group {
+      label {
+        font-size: 18px;
+      }
+
+      input {
+        width: 80%;
+        height: 20px;
+        margin-bottom: 4px;
+      }
+
+      .btn {
+        margin: 0% !important;
+        margin-right: 5px !important;
+        border: solid 2px $colorPallete3;
+        background: transparent;
+        color: $colorPallete3;
+        padding: 1% !important;
+      }
+
+      .cancel-btn {
+        height: 33.09px;
+        width: 60px;
+        border: solid 2px $bluePallete;
+        background: transparent;
+        color: $bluePallete;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+  .section-active {
+    animation: appear 0.6s cubic-bezier(0.21, 0.55, 0.88, 1.12);
+    width: 80%;
+  }
+}

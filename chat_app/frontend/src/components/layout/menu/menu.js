@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { SideBarData, MenuData } from "./menuData";
